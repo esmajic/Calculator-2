@@ -5,11 +5,15 @@ public class MainCalculator {
 	public static void main(String[] args) {
 
 		Scanner input = new Scanner(System.in);
+		
+		System.out.println("\n==================================");
+		System.out.println("=       Ervin's Calculator       =");
+		System.out.println("==================================");
 
 		double a, b;
-		System.out.println("Enter variable a:  ");
+		System.out.println("\nEnter variable a:  ");
 		a = input.nextDouble();
-		System.out.println("Enter variable b:  ");
+		System.out.println("\nEnter variable b:  ");
 		b = input.nextDouble();
 
 		CalculatorMethods digitron = new CalculatorMethods();
