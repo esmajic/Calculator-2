@@ -1,4 +1,4 @@
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
 
 import org.junit.After;
 import org.junit.Before;
@@ -7,19 +7,19 @@ import org.junit.Test;
 public class CalculatorMethodsTest {
 
 	CalculatorMethods metoda;
-	
+
 	@Before
 	public void setUp() {
-	metoda = new CalculatorMethods();
-	System.out.println("BEFORE");;
+		metoda = new CalculatorMethods();
+		System.out.println("BEFORE");
+		;
 	}
-	
+
 	@After
 	public void terDown() {
 		System.out.println("AFTER");
 	}
-	
-	
+
 	@Test
 	public void shouldReturnSumOfTwoNumbers() {
 		double result = metoda.addition(2, 2);
@@ -55,7 +55,5 @@ public class CalculatorMethodsTest {
 		double result = (double) metoda.square(2);
 		assertEquals(4, result, 0);
 	}
-
-	
 
 }
