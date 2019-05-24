@@ -16,20 +16,45 @@ public class MainCalculator {
 			a = input.nextDouble();
 			System.out.println("\nEnter variable b:  ");
 			b = input.nextDouble();
+			System.out.println("\nSelect desired operation:  ");
+			System.out.println("\n============================");
+			System.out.println("1 for addition");
+			System.out.println("2 for subtraction");
+			System.out.println("3 for multiplication");
+			System.out.println("4 for division");
+			System.out.println("5 for square root");
+			System.out.println("6 for power calculation");
+			System.out.println("0 for Exit");
+			System.out.println("============================");
 
+			int selection = input.nextInt();
 			CalculatorMethods digitron = new CalculatorMethods();
-			System.out.println();
-			System.out.println("Result of addition is : " + digitron.addition(a, b));
-			System.out.println();
-			System.out.println("Result of subtraction is : " + digitron.subtraction(a, b));
-			System.out.println();
-			System.out.println("Result of multiplication is : " + digitron.multiplication(a, b));
-			System.out.println();
-			System.out.println("Result of division is: " + digitron.division(a, b));
-			System.out.println();
-			System.out.println("Square root result is : " + digitron.sqrt(a));
-			System.out.println();
-			System.out.println("Result of square is : " + digitron.square(a));
+
+			switch (selection) {
+			case 1:
+				System.out.println("Result of addition is : " + digitron.addition(a, b));
+				break;
+			case 2:
+				System.out.println("Result of asubtraction is : " + digitron.subtraction(a, b));
+				break;
+			case 3:
+				System.out.println("Result of multiplication is : " + digitron.multiplication(a, b));
+				break;
+			case 4:
+				System.out.println("Result of division is: " + digitron.division(a, b));
+				break;
+			case 5:
+				System.out.println("Result of square root is: " + digitron.sqrt(a));
+				break;
+			case 6:
+				System.out.println("Result of power calculation is: " + digitron.square(a));
+				break;
+			case 0:
+				System.out.println("Thank you for using Ervin's calculator. Bye-bye.");
+			default:
+				System.out.println("Error. Your selection entry was incorrect. Try again.");
+				break;
+			}
 
 		} catch (Exception e) {
 			System.out.println("Please, enter correct variable type and try again.");
