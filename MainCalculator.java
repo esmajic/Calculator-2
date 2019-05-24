@@ -12,10 +12,7 @@ public class MainCalculator {
 			System.out.println("==================================");
 
 			double a, b;
-			System.out.println("\nEnter variable a:  ");
-			a = input.nextDouble();
-			System.out.println("\nEnter variable b:  ");
-			b = input.nextDouble();
+
 			System.out.println("\nSelect desired operation:  ");
 			System.out.println("\n============================");
 			System.out.println("1 for addition");
@@ -32,27 +29,47 @@ public class MainCalculator {
 
 			switch (selection) {
 			case 1:
-				System.out.println("Result of addition is : " + digitron.addition(a, b));
+				System.out.println("\nEnter variable a:  ");
+				a = input.nextDouble();
+				System.out.println("Enter variable b:  ");
+				b = input.nextDouble();
+				System.out.println("\nResult of addition is : " + digitron.addition(a, b));
 				break;
 			case 2:
-				System.out.println("Result of asubtraction is : " + digitron.subtraction(a, b));
+				System.out.println("\nEnter variable a:  ");
+				a = input.nextDouble();
+				System.out.println("Enter variable b:  ");
+				b = input.nextDouble();
+				System.out.println("\nResult of asubtraction is : " + digitron.subtraction(a, b));
 				break;
 			case 3:
-				System.out.println("Result of multiplication is : " + digitron.multiplication(a, b));
+				System.out.println("\nEnter variable a:  ");
+				a = input.nextDouble();
+				System.out.println("Enter variable b:  ");
+				b = input.nextDouble();
+				System.out.println("\nResult of multiplication is : " + digitron.multiplication(a, b));
 				break;
 			case 4:
-				System.out.println("Result of division is: " + digitron.division(a, b));
+				System.out.println("\nEnter variable a:  ");
+				a = input.nextDouble();
+				System.out.println("Enter variable b:  ");
+				b = input.nextDouble();
+				System.out.println("\nResult of division is: " + digitron.division(a, b));
 				break;
 			case 5:
-				System.out.println("Result of square root is: " + digitron.sqrt(a));
+				System.out.println("\nEnter variable a:  ");
+				a = input.nextDouble();
+				System.out.println("\nResult of square root is: " + digitron.sqrt(a));
 				break;
 			case 6:
-				System.out.println("Result of power calculation is: " + digitron.square(a));
+				System.out.println("\nEnter variable a:  ");
+				a = input.nextDouble();
+				System.out.println("\nResult of power calculation is: " + digitron.square(a));
 				break;
 			case 0:
-				System.out.println("Thank you for using Ervin's calculator. Bye-bye.");
+				System.out.println("\nThank you for using Ervin's calculator. Bye-bye.");
 			default:
-				System.out.println("Error. Your selection entry was incorrect. Try again.");
+				System.out.println("\nError. Your selection entry was incorrect. Try again.");
 				break;
 			}
 
