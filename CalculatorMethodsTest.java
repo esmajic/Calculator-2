@@ -83,4 +83,9 @@ public class CalculatorMethodsTest {
 		assertTrue(metoda1.getB() == 2);
 
 	}
+	@Test
+	public void testToString() {
+		String expected = "CalculatorMethods [variable a = 1.0, variable b = 2.0]";
+		assertEquals(expected, metoda1.toString());
+	}
 }
