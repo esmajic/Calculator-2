@@ -12,13 +12,12 @@ public class CalculatorMethodsTest {
 	@Before
 	public void setUp() {
 		metoda = new CalculatorMethods();
-		metoda1 = new Calculator(1, 2);
 		System.out.println("BEFORE");
 		;
 	}
 
 	@After
-	public void terDown() {
+	public void tearDown() {
 		System.out.println("AFTER");
 	}
 
@@ -58,34 +57,5 @@ public class CalculatorMethodsTest {
 		assertEquals(4.0 , result, 0);
 	}
 
-	@Test
-	public void testSetValueA() {
-		metoda1.setA(1);
-		assertTrue(metoda1.getA() == 1);
-	}
 	
-	@Test
-	public void testGetValueA() {
-		metoda1.setA(1);
-		assertTrue(metoda1.getA() == 1);
-	}
-
-	@Test
-	public void testSetValueB() {
-		metoda1.setB(2);
-		assertTrue(metoda1.getB() == 2);
-
-	}
-	
-	@Test
-	public void testGetValueB() {
-		metoda1.setB(2);
-		assertTrue(metoda1.getB() == 2);
-
-	}
-	@Test
-	public void testToString() {
-		String expected = "CalculatorMethods [variable a = 1.0, variable b = 2.0]";
-		assertEquals(expected, metoda1.toString());
-	}
 }
