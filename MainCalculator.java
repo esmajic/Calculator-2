@@ -13,7 +13,7 @@ public class MainCalculator {
 
 			double a, b;
 
-			System.out.println("\nSelect desired operation:  ");
+			
 			System.out.println("\n============================");
 			System.out.println("1 for addition");
 			System.out.println("2 for subtraction");
@@ -23,6 +23,7 @@ public class MainCalculator {
 			System.out.println("6 for power calculation");
 			System.out.println("0 for Exit");
 			System.out.println("============================");
+			System.out.println("\nSelect desired operation:  ");
 
 			int selection = input.nextInt();
 			CalculatorMethods digitron = new CalculatorMethods();
