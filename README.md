@@ -1,3 +1,3 @@
 # Calculator-2
 
-- this project is just a example of applied software testing with JUnit 4
+- just an ordinary calculator code...do not hesitate to look into it
